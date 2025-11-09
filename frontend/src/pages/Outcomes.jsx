@@ -860,7 +860,7 @@ const Outcomes = (props) => {
           {chatBox && (
             <ChatBox case_id={caseId} showAlert={showAlert} host={host} />
           )}
-          {allDocumentsCompleted && (
+          {allDocumentsCompleted && verdictStatus === "success" && (
             <button
               className={`btn btn-${
                 chatBox ? "outline-primary" : "primary"
